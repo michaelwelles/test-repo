@@ -1,11 +1,6 @@
 {
     "AdamaChanges": true,
-    "ESType": "advertiser",
-    
-    
-
-    
-    
+    "ESType": "advertiser",    
     "Fields": [
         {
             "Name": "ad_server_fee",
@@ -82,129 +77,25 @@
             "Required": true,
             "Type": "int64"
         },
-
-
-minimize_multi_ads
-name
-sales_contact_id
-status
-updated_on
-version
-vertical_id
-        
-
-
         {
-            "Name": "cost_cpm",
-            "Required": false,
-            "Type": "float64"
-        },
-        {
-            "Name": "cost_cpts",
-            "Required": false,
-            "Type": "float64"
-        },
-        {
-            "Name": "cost_pct_cpm",
-            "Required": false,
-            "Type": "float64"
-        },
-
-        {
-            "Name": "currency",
-            "Required": false,
-            "Type": "string"
-        },
-        {
-            "Name": "currency_fixed",
-            "Required": false,
-            "Type": "string"
-        },
-        {
-            "Name": "eligible",
+            "Name": "minimize_multi_ads",
             "Required": true,
             "Type": "bool"
         },
-        {
-            "Name": "external_identifier",
-            "Required": true,
-            "Type": "string"
-        },
-
         {
             "Name": "name",
             "Required": true,
             "Type": "string"
         },
         {
-            "Name": "pixel_type",
-            "Required": true,
-            "Type": "string"
-        },
-        {
-            "Name": "pricing",
-            "Required": false,
-            "Type": "string"
-        },
-        {
-            "Name": "provider_id",
+            "Name": "sales_contact_id",
             "Required": false,
             "Type": "int64"
-        },
-        {
-            "Name": "revenue",
-            "Required": false,
-            "Type": "string"
-        },
-        {
-            "Name": "rmx_conversion_minutes",
-            "Required": true,
-            "Type": "int64"
-        },
-        {
-            "Name": "rmx_conversion_type",
-            "Required": true,
-            "Type": "string"
-        },
-        {
-            "Name": "rmx_friendly",
-            "Required": true,
-            "Type": "bool"
-        },
-        {
-            "Name": "rmx_merit",
-            "Required": true,
-            "Type": "bool"
-        },
-        {
-            "Name": "rmx_pc_window_minutes",
-            "Required": false,
-            "Type": "int64"
-        },
-        {
-            "Name": "rmx_pv_window_minutes",
-            "Required": false,
-            "Type": "int64"
-        },
-        {
-            "Name": "segment_op",
-            "Required": false,
-            "Type": "string"
         },
         {
             "Name": "status",
             "Required": true,
             "Type": "bool"
-        },
-        {
-            "Name": "tag_type",
-            "Required": true,
-            "Type": "string"
-        },
-        {
-            "Name": "tags",
-            "Required": false,
-            "Type": "string"
         },
         {
             "Name": "updated_on",
@@ -215,8 +106,13 @@ vertical_id
             "Name": "version",
             "Required": true,
             "Type": "int64"
-        }
+        }        
+        {
+            "Name": "vertical_id",
+            "Required": true,
+            "Type": "int64"
+        },        
     ],
     "Mapping": false,
-    "Name": "PixelBundlesProcessor"
+    "Name": "AudienceProcessor"
 }
