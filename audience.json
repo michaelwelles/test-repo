@@ -1,17 +1,99 @@
 {
     "AdamaChanges": true,
-    "ESType": "pixel_bundle",
+    "ESType": "advertiser",
+    
+    
+
+    
+    
     "Fields": [
         {
-            "Name": "advertiser_id",
+            "Name": "ad_server_fee",
             "Required": false,
+            "Type": "float64"
+        },
+        {
+            "Name": "ad_server_id",
+            "Required": true,
             "Type": "int64"
+        },
+        {
+            "Name": "ad_server_password",
+            "Required": false,
+            "Type": "string"
+        },
+        {
+            "Name": "ad_server_username",
+            "Required": false,
+            "Type": "string"
         },
         {
             "Name": "agency_id",
+            "Required": true,
+            "Type": "int64"
+        },
+        {
+            "Name": "allow_x_strat_optimization",
+            "Required": true,
+            "Type": "bool"
+        },
+        {
+            "Name": "billing_contact_id",
             "Required": false,
             "Type": "int64"
         },
+        {
+            "Name": "created_on",
+            "Required": true,
+            "Type": "time.Time"
+        },
+        {
+            "Name": "data_sharing_enabled",
+            "Required": true,
+            "Type": "bool"
+        },
+        {
+            "Name": "dmp_enabled",
+            "Required": true,
+            "Type": "string"
+        },        
+        {
+            "Name": "domain",
+            "Required": true,
+            "Type": "string"
+        },   
+        {
+            "Name": "frequency_amount",
+            "Required": false,
+            "Type": "int64"
+        },
+        {
+            "Name": "frequency_interval",
+            "Required": false,
+            "Type": "string"
+        }, 
+        {
+            "Name": "frequency_type",
+            "Required": false,
+            "Type": "string"
+        }, 
+        {
+            "Name": "id",
+            "Required": true,
+            "Type": "int64"
+        },
+
+
+minimize_multi_ads
+name
+sales_contact_id
+status
+updated_on
+version
+vertical_id
+        
+
+
         {
             "Name": "cost_cpm",
             "Required": false,
@@ -27,11 +109,7 @@
             "Required": false,
             "Type": "float64"
         },
-        {
-            "Name": "created_on",
-            "Required": true,
-            "Type": "time.Time"
-        },
+
         {
             "Name": "currency",
             "Required": false,
@@ -52,11 +130,7 @@
             "Required": true,
             "Type": "string"
         },
-        {
-            "Name": "id",
-            "Required": true,
-            "Type": "int64"
-        },
+
         {
             "Name": "name",
             "Required": true,
