@@ -1,0 +1,148 @@
+{
+    "AdamaChanges": true,
+    "ESType": "pixel_bundle",
+    "Fields": [
+        {
+            "Name": "advertiser_id",
+            "Required": false,
+            "Type": "int64"
+        },
+        {
+            "Name": "agency_id",
+            "Required": false,
+            "Type": "int64"
+        },
+        {
+            "Name": "cost_cpm",
+            "Required": false,
+            "Type": "float64"
+        },
+        {
+            "Name": "cost_cpts",
+            "Required": false,
+            "Type": "float64"
+        },
+        {
+            "Name": "cost_pct_cpm",
+            "Required": false,
+            "Type": "float64"
+        },
+        {
+            "Name": "created_on",
+            "Required": true,
+            "Type": "time.Time"
+        },
+        {
+            "Name": "currency",
+            "Required": false,
+            "Type": "string"
+        },
+        {
+            "Name": "currency_fixed",
+            "Required": false,
+            "Type": "string"
+        },
+        {
+            "Name": "eligible",
+            "Required": true,
+            "Type": "bool"
+        },
+        {
+            "Name": "external_identifier",
+            "Required": true,
+            "Type": "string"
+        },
+        {
+            "Name": "id",
+            "Required": true,
+            "Type": "int64"
+        },
+        {
+            "Name": "name",
+            "Required": true,
+            "Type": "string"
+        },
+        {
+            "Name": "pixel_type",
+            "Required": true,
+            "Type": "string"
+        },
+        {
+            "Name": "pricing",
+            "Required": false,
+            "Type": "string"
+        },
+        {
+            "Name": "provider_id",
+            "Required": false,
+            "Type": "int64"
+        },
+        {
+            "Name": "revenue",
+            "Required": false,
+            "Type": "string"
+        },
+        {
+            "Name": "rmx_conversion_minutes",
+            "Required": true,
+            "Type": "int64"
+        },
+        {
+            "Name": "rmx_conversion_type",
+            "Required": true,
+            "Type": "string"
+        },
+        {
+            "Name": "rmx_friendly",
+            "Required": true,
+            "Type": "bool"
+        },
+        {
+            "Name": "rmx_merit",
+            "Required": true,
+            "Type": "bool"
+        },
+        {
+            "Name": "rmx_pc_window_minutes",
+            "Required": false,
+            "Type": "int64"
+        },
+        {
+            "Name": "rmx_pv_window_minutes",
+            "Required": false,
+            "Type": "int64"
+        },
+        {
+            "Name": "segment_op",
+            "Required": false,
+            "Type": "string"
+        },
+        {
+            "Name": "status",
+            "Required": true,
+            "Type": "bool"
+        },
+        {
+            "Name": "tag_type",
+            "Required": true,
+            "Type": "string"
+        },
+        {
+            "Name": "tags",
+            "Required": false,
+            "Type": "string"
+        },
+        {
+            "Name": "updated_on",
+            "Required": true,
+            "Type": "time.Time"
+        },
+        {
+            "Name": "version",
+            "Required": true,
+            "Type": "int64"
+        }
+    ],
+    "Mapping": false,
+    "Name": "PixelBundlesProcessor"
+}
