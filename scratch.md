@@ -27,14 +27,11 @@ The Authorization Service normalizes and standardizes MediaMath user permissions
 ## Solving for the class
 
 An overview of the proposed architecture can be found in the [the Architecture
-document](./architecture.md).
-
-Essentially, the Authorization Service:
+document](./architecture.md). Essentially, the Authorization Service:
 * reads user/entity-related data from various Kafka topics
 * applies permission rules to this data
 * writes the results to two Kafka topics (User Permissions and Entity Permissions)
 * makes the Kafka topic data available through a permissions API, for those servcies that don't want to access the topics directly
-
 
 This service is intended to provide a solution for all of the user-based entity
 operation authorization questions at MediaMath. We have validated our model
@@ -135,7 +132,7 @@ the original message availability. Thus the Rules Engine nodes should to be able
 to keep up with the rate of the original publisher even during periods of
 sustained activity.
 
-**TODO**: do we have more specific numbers around this?
+Our target response time for actually processing an incoming message is **under 20ms**. Writing the resulting permissions message out should take less that 10ms, assuming we're in the same data center as the Kafka cluster.
 
 The topics produced by the authorization service are pointer-topic and messages
 are only published when the authorization-specific parts change. This means that
