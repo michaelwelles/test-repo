@@ -27,11 +27,11 @@ The Authorization Service normalizes and standardizes MediaMath user permissions
 ## Solving for the class
 
 An overview of the proposed architecture can be found in the [the Architecture
-document](./architecture.md). Essentially, the Authorization Service:
-* reads user/entity-related data from various Kafka topics
-* applies permission rules to this data
-* writes the results to two Kafka topics (User Permissions and Entity Permissions)
-* makes the Kafka topic data available through a permissions API, for those servcies that don't want to access the topics directly
+document](./architecture.md). Essentially, the Authorization Service will:
+* read user/entity-related data from various Kafka topics
+* apply permission rules to this data
+* write the results to two Kafka topics (User Permissions and Entity Permissions)
+* make the Kafka topic data available through a permissions API, for those servcies that don't want to access the topics directly
 
 This service is intended to provide a solution for all of the user-based entity
 operation authorization questions at MediaMath. We have validated our model
@@ -153,19 +153,13 @@ bottlenecks on the publish side due to network latencies and our confirmed
 message publishing requirements. It may be possible to relax some of the
 publishing confirmation requirement constraints if that becomes necessary.
 
-**TODO**: Define something about the speed of the evaluator-lib and maybe the
-Evaluator API
+User and Entity Permission requests can be made via the evaluator-lib functions in the servcie's Go library, or through the Evaluator API for those services that don't want to incorporate the library. The target response time for permissions requests is **under 20ms** using the evaluator library, and **under 200ms** using the API.
 
 Since the Rules Engine has no permanent local state, nodes should be able to
 simply restart if they fail and catch up if they lose connection to their source
 topics.
 
-The Evaluator API nodes will continue responding to requests with stale data if
-they stop getting updates.
-
-**TODO**: update the paragraph above with whatever we finally decide on with the
-"staleness" definition and indication question.
-
+The MVP version of the service won't be able to track (or indicate to consumers) whether an upstream failure has prevented the publishing of user/entity data to the Kafka topics. If the Authorization Service stops receiving these messages, it will still respond to permissions requests, although the data may become increasingly stale.
 
 ## Technical Challenges
 
