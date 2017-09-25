@@ -1,0 +1,146 @@
+{
+    "AdamaChanges": true,
+    "ESType": "performance-aggregated-campaign-1day",
+    "Fields": [
+        {
+            "Name": "mm_interval",
+            "Required": true,
+            "Type": "string"
+        },
+        {
+            "Name": "campaign_id",
+            "Required": true,
+            "Type": "int64"
+        },        
+        {
+            "Name": "clicks",
+            "Required": true,
+            "Type": "int64"
+        }, 
+        {
+            "Name": "ctc",
+            "Required": true,
+            "Type": "float64"
+        },       
+        {
+            "Name": "ctr",
+            "Required": true,
+            "Type": "float64"
+        }, 
+        {
+            "Name": "impressions",
+            "Required": true,
+            "Type": "int64"
+        },         
+        {
+            "Name": "post_click_aov",
+            "Required": true,
+            "Type": "float64"
+        }, 
+        {
+            "Name": "post_click_conversions",
+            "Required": true,
+            "Type": "int64"
+        },          
+        {
+            "Name": "post_click_revenue",
+            "Required": true,
+            "Type": "float64"
+        }, 
+        {
+            "Name": "post_click_total_spend_roi",
+            "Required": true,
+            "Type": "float64"
+        },         
+        {
+            "Name": "post_view_aov",
+            "Required": true,
+            "Type": "float64"
+        },         
+        {
+            "Name": "post_view_conversions",
+            "Required": true,
+            "Type": "float64"
+        },         
+         {
+            "Name": "post_view_conversions_raw",
+            "Required": true,
+            "Type": "int64"
+        },          
+        {
+            "Name": "post_view_revenue",
+            "Required": true,
+            "Type": "float64"
+        }, 
+        {
+            "Name": "post_view_revenue_raw",
+            "Required": true,
+            "Type": "float64"
+        },         
+        {
+            "Name": "post_view_total_spend_roi",
+            "Required": true,
+            "Type": "float64"
+        },         
+        {
+            "Name": "rr_per_1k_imps",
+            "Required": true,
+            "Type": "float64"
+        },         
+        {
+            "Name": "total_aov",
+            "Required": true,
+            "Type": "float64"
+        },          
+        {
+            "Name": "total_conversions",
+            "Required": true,
+            "Type": "float64"
+        },   
+        {
+            "Name": "total_revenue",
+            "Required": true,
+            "Type": "float64"
+        },   
+         {
+            "Name": "total_spend",
+            "Required": true,
+            "Type": "float64"
+        },          
+        {
+            "Name": "total_spend_cpa",
+            "Required": true,
+            "Type": "float64"
+        },           
+        {
+            "Name": "total_spend_cpc",
+            "Required": true,
+            "Type": "float64"
+        },           
+         {
+            "Name": "total_spend_cpm",
+            "Required": true,
+            "Type": "float64"
+        },   
+         {
+            "Name": "total_spend_pc_cpa",
+            "Required": true,
+            "Type": "float64"
+        },          
+        {
+            "Name": "total_spend_pv_cpa",
+            "Required": true,
+            "Type": "float64"
+        },           
+        {
+            "Name": "total_spend_roi",
+            "Required": true,
+            "Type": "float64"
+        },           
+    ],
+    "MGetExpectedOutput": "map[int64]int64{273701: 158030}",
+    "MGetResponse": "{\"docs\":[{\"_id\":\"273701\",\"_index\":\"adama_chxraug\",\"_source\":{\"agency_id\":158030,\"id\":273701},\"_type\":\"advertiser\",\"_version\":3,\"found\":true},{\"_id\":\"294417\",\"_index\":\"adama_chxraug\",\"_source\":{\"agency_id\":0,\"id\":294417},\"_type\":\"advertiser\",\"_version\":3,\"found\":true}]}",
+    "MGetReturnType": "agency",
+    "Mapping": false,
+    "Name": "?????Processor"
+}
