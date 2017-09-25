@@ -81,7 +81,12 @@
             "Name": "post_view_total_spend_roi",
             "Required": true,
             "Type": "float64"
-        },         
+        },
+        {
+            "Name": "revenue",
+            "Required": true,
+            "Type": "float64"
+        },        
         {
             "Name": "rr_per_1k_imps",
             "Required": true,
