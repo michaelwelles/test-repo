@@ -14,132 +14,132 @@
         },        
         {
             "Name": "clicks",
-            "Required": true,
+            "Required": false,
             "Type": "int64"
         }, 
         {
             "Name": "ctc",
-            "Required": true,
+            "Required": false,
             "Type": "float64"
         },       
         {
             "Name": "ctr",
-            "Required": true,
+            "Required": false,
             "Type": "float64"
         }, 
         {
             "Name": "impressions",
-            "Required": true,
+            "Required": false,
             "Type": "int64"
         },         
         {
             "Name": "post_click_aov",
-            "Required": true,
+            "Required": false,
             "Type": "float64"
         }, 
         {
             "Name": "post_click_conversions",
-            "Required": true,
+            "Required": false,
             "Type": "int64"
         },          
         {
             "Name": "post_click_revenue",
-            "Required": true,
+            "Required": false,
             "Type": "float64"
         }, 
         {
             "Name": "post_click_total_spend_roi",
-            "Required": true,
+            "Required": false,
             "Type": "float64"
         },         
         {
             "Name": "post_view_aov",
-            "Required": true,
+            "Required": false,
             "Type": "float64"
         },         
         {
             "Name": "post_view_conversions",
-            "Required": true,
+            "Required": false,
             "Type": "float64"
         },         
          {
             "Name": "post_view_conversions_raw",
-            "Required": true,
+            "Required": false,
             "Type": "int64"
         },          
         {
             "Name": "post_view_revenue",
-            "Required": true,
+            "Required": false,
             "Type": "float64"
         }, 
         {
             "Name": "post_view_revenue_raw",
-            "Required": true,
+            "Required": false,
             "Type": "float64"
         },         
         {
             "Name": "post_view_total_spend_roi",
-            "Required": true,
+            "Required": false,
             "Type": "float64"
         },
         {
             "Name": "revenue",
-            "Required": true,
+            "Required": false,
             "Type": "float64"
         },        
         {
             "Name": "rr_per_1k_imps",
-            "Required": true,
+            "Required": false,
             "Type": "float64"
         },         
         {
             "Name": "total_aov",
-            "Required": true,
+            "Required": false,
             "Type": "float64"
         },          
         {
             "Name": "total_conversions",
-            "Required": true,
+            "Required": false,
             "Type": "float64"
         },   
         {
             "Name": "total_revenue",
-            "Required": true,
+            "Required": false,
             "Type": "float64"
         },   
          {
             "Name": "total_spend",
-            "Required": true,
+            "Required": false,
             "Type": "float64"
         },          
         {
             "Name": "total_spend_cpa",
-            "Required": true,
+            "Required": false,
             "Type": "float64"
         },           
         {
             "Name": "total_spend_cpc",
-            "Required": true,
+            "Required": false,
             "Type": "float64"
         },           
          {
             "Name": "total_spend_cpm",
-            "Required": true,
+            "Required": false,
             "Type": "float64"
         },   
          {
             "Name": "total_spend_pc_cpa",
-            "Required": true,
+            "Required": false,
             "Type": "float64"
         },          
         {
             "Name": "total_spend_pv_cpa",
-            "Required": true,
+            "Required": false,
             "Type": "float64"
         },           
         {
             "Name": "total_spend_roi",
-            "Required": true,
+            "Required": false,
             "Type": "float64"
         },           
     ],
