@@ -1,0 +1,179 @@
+{
+    "AdamaChanges": false,
+    "ESType": "performance_aggregated_campaign_14day",
+    "Fields": [
+        {
+            "Name": "mm_interval",
+            "Record": "com.mediamath.changes.reporting.mm_interval",
+            "Required": true,
+            "Type": "string"
+        },
+        {
+            "Name": "campaign_id",
+            "Record": "com.mediamath.changes.reporting.campaign_id",
+            "Required": true,
+            "Type": "int64"
+        },
+        {
+            "Name": "clicks",
+            "Record": "com.mediamath.changes.reporting.clicks",
+            "Required": false,
+            "Type": "int64"
+        },
+        {
+            "Name": "ctc",
+            "Record": "com.mediamath.changes.reporting.ctc",
+            "Required": false,
+            "Type": "float64"
+        },
+        {
+            "Name": "ctr",
+            "Record": "com.mediamath.changes.reporting.ctr",
+            "Required": false,
+            "Type": "float64"
+        },
+        {
+            "Name": "impressions",
+            "Record": "com.mediamath.changes.reporting.impressions",
+            "Required": false,
+            "Type": "int64"
+        },
+        {
+            "Name": "post_click_aov",
+            "Record": "com.mediamath.changes.reporting.post_click_aov",
+            "Required": false,
+            "Type": "float64"
+        },
+        {
+            "Name": "post_click_conversions",
+            "Record": "com.mediamath.changes.reporting.post_click_conversions",
+            "Required": false,
+            "Type": "int64"
+        },
+        {
+            "Name": "post_click_revenue",
+            "Record": "com.mediamath.changes.reporting.post_click_revenue",
+            "Required": false,
+            "Type": "float64"
+        },
+        {
+            "Name": "post_click_total_spend_roi",
+            "Record": "com.mediamath.changes.reporting.post_click_total_spend_roi",
+            "Required": false,
+            "Type": "float64"
+        },
+        {
+            "Name": "post_view_aov",
+            "Record": "com.mediamath.changes.reporting.post_view_aov",
+            "Required": false,
+            "Type": "float64"
+        },
+        {
+            "Name": "post_view_conversions",
+            "Record": "com.mediamath.changes.reporting.post_view_conversions",
+            "Required": false,
+            "Type": "float64"
+        },
+        {
+            "Name": "post_view_conversions_raw",
+            "Record": "com.mediamath.changes.reporting.post_view_conversions_raw",
+            "Required": false,
+            "Type": "int64"
+        },
+        {
+            "Name": "post_view_revenue",
+            "Record": "com.mediamath.changes.reporting.post_view_revenue",
+            "Required": false,
+            "Type": "float64"
+        },
+        {
+            "Name": "post_view_revenue_raw",
+            "Record": "com.mediamath.changes.reporting.post_view_revenue_raw",
+            "Required": false,
+            "Type": "float64"
+        },
+        {
+            "Name": "post_view_total_spend_roi",
+            "Record": "com.mediamath.changes.reporting.post_view_total_spend_roi",
+            "Required": false,
+            "Type": "float64"
+        },
+        {
+            "Name": "revenue",
+            "Record": "com.mediamath.changes.reporting.revenue",
+            "Required": false,
+            "Type": "float64"
+        },
+        {
+            "Name": "rr_per_1k_imps",
+            "Record": "com.mediamath.changes.reporting.rr_per_1k_imps",
+            "Required": false,
+            "Type": "float64"
+        },
+        {
+            "Name": "total_aov",
+            "Record": "com.mediamath.changes.reporting.total_aov",
+            "Required": false,
+            "Type": "float64"
+        },
+        {
+            "Name": "total_conversions",
+            "Record": "com.mediamath.changes.reporting.total_conversions",
+            "Required": false,
+            "Type": "float64"
+        },
+        {
+            "Name": "total_revenue",
+            "Record": "com.mediamath.changes.reporting.total_revenue",
+            "Required": false,
+            "Type": "float64"
+        },
+        {
+            "Name": "total_spend",
+            "Record": "com.mediamath.changes.reporting.total_spend",
+            "Required": false,
+            "Type": "float64"
+        },
+        {
+            "Name": "total_spend_cpa",
+            "Record": "com.mediamath.changes.reporting.total_spend_cpa",
+            "Required": false,
+            "Type": "float64"
+        },
+        {
+            "Name": "total_spend_cpc",
+            "Record": "com.mediamath.changes.reporting.total_spend_cpc",
+            "Required": false,
+            "Type": "float64"
+        },
+        {
+            "Name": "total_spend_cpm",
+            "Record": "com.mediamath.changes.reporting.total_spend_cpm",
+            "Required": false,
+            "Type": "float64"
+        },
+        {
+            "Name": "total_spend_pc_cpa",
+            "Record": "com.mediamath.changes.reporting.total_spend_pc_cpa",
+            "Required": false,
+            "Type": "float64"
+        },
+        {
+            "Name": "total_spend_pv_cpa",
+            "Record": "com.mediamath.changes.reporting.total_spend_pv_cpa",
+            "Required": false,
+            "Type": "float64"
+        },
+        {
+            "Name": "total_spend_roi",
+            "Record": "com.mediamath.changes.reporting.total_spend_roi",
+            "Required": false,
+            "Type": "float64"
+        }
+    ],
+    "Mapping": false,
+    "Name": "PerfAggCampaign14Processor",
+    "OuterRecord": "com.mediamath.changes.metrics",
+    "UpdateId": "campaign_id",
+    "UpdateType": "campaign"
+}
