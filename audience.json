@@ -1,41 +1,21 @@
 {
     "AdamaChanges": true,
-    "ESType": "advertiser",    
+    "ESType": "atomic_creatives",
     "Fields": [
         {
-            "Name": "ad_server_fee",
-            "Required": false,
-            "Type": "float64"
-        },
-        {
-            "Name": "ad_server_id",
+            "Name": "id",
             "Required": true,
             "Type": "int64"
         },
         {
-            "Name": "ad_server_password",
-            "Required": false,
-            "Type": "string"
-        },
-        {
-            "Name": "ad_server_username",
-            "Required": false,
-            "Type": "string"
-        },
-        {
-            "Name": "agency_id",
-            "Required": true,
-            "Type": "int64"
-        },
-        {
-            "Name": "allow_x_strat_optimization",
+            "Name": "all_organizations",
             "Required": true,
             "Type": "bool"
         },
         {
-            "Name": "billing_contact_id",
-            "Required": false,
-            "Type": "int64"
+            "Name": "bill_type",
+            "Required": true,
+            "Type": "string"
         },
         {
             "Name": "created_on",
@@ -43,54 +23,69 @@
             "Type": "time.Time"
         },
         {
-            "Name": "data_sharing_enabled",
+            "Name": "deal_indentifier",
             "Required": true,
-            "Type": "bool"
+            "Type": "string"
         },
         {
-            "Name": "dmp_enabled",
-            "Required": true,
-            "Type": "string"
-        },        
-        {
-            "Name": "domain",
-            "Required": true,
-            "Type": "string"
-        },   
-        {
-            "Name": "frequency_amount",
+            "Name": "description",
             "Required": false,
-            "Type": "int64"
+            "Type": "string"
         },
         {
-            "Name": "frequency_interval",
-            "Required": false,
-            "Type": "string"
-        }, 
-        {
-            "Name": "frequency_type",
-            "Required": false,
-            "Type": "string"
-        }, 
-        {
-            "Name": "id",
+            "Name": "end_datetime",
             "Required": true,
-            "Type": "int64"
+            "Type": "time.Time"
         },
         {
-            "Name": "minimize_multi_ads",
+            "Name": "entity_type",
             "Required": true,
-            "Type": "bool"
+            "Type": "string"
         },
         {
             "Name": "name",
+            "Required": false,
+            "Type": "string"
+        },
+        {
+            "Name": "owner.id",
+            "Required": true,
+            "Type": "int64"
+        },
+        {
+            "Name": "owner.type",
+            "Required": true,
+            "Type": "string"
+        },
+
+permissions.advertiser_ids: [157667]                         
+  permissions.agency_ids: []   
+  permissions.organization_ids: []                             
+
+        {
+            "Name": "price.currency_code",
             "Required": true,
             "Type": "string"
         },
         {
-            "Name": "sales_contact_id",
-            "Required": false,
+            "Name": "price.value",
+            "Required": true,
             "Type": "int64"
+        },
+        {
+            "Name": "price_method",
+            "Required": true,
+            "Type": "string"
+        },
+        {
+            "Name": "price_type",
+            "Required": true,
+            "Type": "string"
+        },
+        {
+            "Name": "start_datetime",
+            "Required": true,
+            "Type": "time.Time"
         },
         {
             "Name": "status",
@@ -98,21 +93,21 @@
             "Type": "bool"
         },
         {
+            "Name": "sub_supply_source_id",
+            "Required": false,
+            "Type": "int64"
+        },
+        {
+            "Name": "supply_source_id",
+            "Required": true,
+            "Type": "int64"
+        },
+        {
             "Name": "updated_on",
             "Required": true,
             "Type": "time.Time"
-        },
-        {
-            "Name": "version",
-            "Required": true,
-            "Type": "int64"
-        }        
-        {
-            "Name": "vertical_id",
-            "Required": true,
-            "Type": "int64"
-        },        
+        }
     ],
-    "Mapping": false,
-    "Name": "AudienceProcessor"
+    "Name": "MediaDealsProcessor",
+    "Topic": "ewr.changes.snapshot.media-deals.1"
 }
